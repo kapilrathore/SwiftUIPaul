@@ -9,43 +9,50 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var checkAmount = ""
+    @State private var numberOfPeople = 2
+    @State private var tipPercentage = 2
     
-//        @State private var tapCount = 0
-    
-//    @State private var name = ""
-//    private let gender = ["Male", "Female"]
-//    @State private var selectedGender = "Male"
+    private let tipPercentageOptions = [0, 5, 10, 15, 20]
     
     var body: some View {
-
-//        Button("Button taps \(tapCount)") {
-//            self.tapCount += 1
-//        }
-        
-//        NavigationView {
-//            Form {
-//                Section {
-//                    TextField("Enter name", text: $name)
-//                    Text("Hello \(name+" ")!")
-//                }
-//
-//                Section {
-//                    Picker("Select gender", selection: $selectedGender) {
-//                        ForEach(0 ..< gender.count) {
-//                            Text(self.gender[$0])
-//                        }
-//                    }
-//                    Text(self.selectedGender)
-//                }
-//            }
-//            .navigationBarTitle("SwiftUI")
-            
-//            Picker("Select gender", selection: $selectedGender) {
-//                ForEach(0 ..< gender.count) {
-//                    Text(self.gender[$0])
-//                }
-//            }
+        NavigationView {
+            Form {
+                Section {
+                    TextField("Check Amount", text: $checkAmount)
+                        .keyboardType(.decimalPad)
+                    Picker("Number of people", selection: $numberOfPeople) {
+                        ForEach(2 ..< 100) {
+                            Text("\($0) people")
+                        }
+                    }
+                }
+                
+                Section(header: Text("How much do you want to tip?")) {
+                    Picker("Number of people", selection: $tipPercentage) {
+                        ForEach(0 ..< tipPercentageOptions.count) {
+                            Text("\(self.tipPercentageOptions[$0])%")
+                        }
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                }
+                
+                Section {
+                    Text("$ \(self.amountPerPerson(), specifier: "%.2f")")
+                }
+            }
+            .navigationBarTitle("Tip Calculator")
         }
+    }
+    
+    private func amountPerPerson() -> Double {
+        let numberOfPeople = Double(self.numberOfPeople + 2)
+        let tipPercentage = Double(self.tipPercentageOptions[self.tipPercentage])
+        let checkAmount = Double(self.checkAmount) ?? 0
+        
+        let tipAmount = checkAmount * tipPercentage/100
+        let totalAmount = checkAmount + tipAmount
+        return totalAmount/numberOfPeople
     }
 }
 
