@@ -9,8 +9,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+//        @State private var tapCount = 0
+    
+//    @State private var name = ""
+//    private let gender = ["Male", "Female"]
+//    @State private var selectedGender = "Male"
+    
     var body: some View {
-        Text("Hello, World!")
+
+//        Button("Button taps \(tapCount)") {
+//            self.tapCount += 1
+//        }
+        
+//        NavigationView {
+//            Form {
+//                Section {
+//                    TextField("Enter name", text: $name)
+//                    Text("Hello \(name+" ")!")
+//                }
+//
+//                Section {
+//                    Picker("Select gender", selection: $selectedGender) {
+//                        ForEach(0 ..< gender.count) {
+//                            Text(self.gender[$0])
+//                        }
+//                    }
+//                    Text(self.selectedGender)
+//                }
+//            }
+//            .navigationBarTitle("SwiftUI")
+            
+//            Picker("Select gender", selection: $selectedGender) {
+//                ForEach(0 ..< gender.count) {
+//                    Text(self.gender[$0])
+//                }
+//            }
+        }
     }
 }
 

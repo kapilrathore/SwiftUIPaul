@@ -12,6 +12,12 @@
 		34162FA523EC76B700C633FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34162FA423EC76B700C633FB /* Assets.xcassets */; };
 		34162FA823EC76B700C633FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34162FA723EC76B700C633FB /* Preview Assets.xcassets */; };
 		34162FAB23EC76B700C633FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34162FA923EC76B700C633FB /* Main.storyboard */; };
+		34162FBA23EC7F0D00C633FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34162FB923EC7F0D00C633FB /* AppDelegate.swift */; };
+		34162FBC23EC7F0D00C633FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34162FBB23EC7F0D00C633FB /* SceneDelegate.swift */; };
+		34162FBE23EC7F0D00C633FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34162FBD23EC7F0D00C633FB /* ContentView.swift */; };
+		34162FC023EC7F0D00C633FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34162FBF23EC7F0D00C633FB /* Assets.xcassets */; };
+		34162FC323EC7F0D00C633FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34162FC223EC7F0D00C633FB /* Preview Assets.xcassets */; };
+		34162FC623EC7F0D00C633FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34162FC423EC7F0D00C633FB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +29,25 @@
 		34162FAA23EC76B700C633FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34162FAC23EC76B700C633FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34162FAD23EC76B700C633FB /* SwiftUIMacOSDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIMacOSDemo.entitlements; sourceTree = "<group>"; };
+		34162FB723EC7F0D00C633FB /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34162FB923EC7F0D00C633FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34162FBB23EC7F0D00C633FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		34162FBD23EC7F0D00C633FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34162FBF23EC7F0D00C633FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34162FC223EC7F0D00C633FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34162FC523EC7F0D00C633FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34162FC723EC7F0D00C633FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		34162F9A23EC76B600C633FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34162FB423EC7F0D00C633FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				34162F9F23EC76B600C633FB /* SwiftUIMacOSDemo */,
+				34162FB823EC7F0D00C633FB /* SwiftUIDemo */,
 				34162F9E23EC76B600C633FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				34162F9D23EC76B600C633FB /* SwiftUIMacOSDemo.app */,
+				34162FB723EC7F0D00C633FB /* SwiftUIDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +97,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		34162FB823EC7F0D00C633FB /* SwiftUIDemo */ = {
+			isa = PBXGroup;
+			children = (
+				34162FB923EC7F0D00C633FB /* AppDelegate.swift */,
+				34162FBB23EC7F0D00C633FB /* SceneDelegate.swift */,
+				34162FBD23EC7F0D00C633FB /* ContentView.swift */,
+				34162FBF23EC7F0D00C633FB /* Assets.xcassets */,
+				34162FC423EC7F0D00C633FB /* LaunchScreen.storyboard */,
+				34162FC723EC7F0D00C633FB /* Info.plist */,
+				34162FC123EC7F0D00C633FB /* Preview Content */,
+			);
+			path = SwiftUIDemo;
+			sourceTree = "<group>";
+		};
+		34162FC123EC7F0D00C633FB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				34162FC223EC7F0D00C633FB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +139,23 @@
 			productReference = 34162F9D23EC76B600C633FB /* SwiftUIMacOSDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		34162FB623EC7F0D00C633FB /* SwiftUIDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34162FC823EC7F0D00C633FB /* Build configuration list for PBXNativeTarget "SwiftUIDemo" */;
+			buildPhases = (
+				34162FB323EC7F0D00C633FB /* Sources */,
+				34162FB423EC7F0D00C633FB /* Frameworks */,
+				34162FB523EC7F0D00C633FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIDemo;
+			productName = SwiftUIDemo;
+			productReference = 34162FB723EC7F0D00C633FB /* SwiftUIDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,6 +167,9 @@
 				ORGANIZATIONNAME = "Kapil Rathore";
 				TargetAttributes = {
 					34162F9C23EC76B600C633FB = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					34162FB623EC7F0D00C633FB = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -123,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				34162F9C23EC76B600C633FB /* SwiftUIMacOSDemo */,
+				34162FB623EC7F0D00C633FB /* SwiftUIDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +204,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34162FB523EC7F0D00C633FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34162FC623EC7F0D00C633FB /* LaunchScreen.storyboard in Resources */,
+				34162FC323EC7F0D00C633FB /* Preview Assets.xcassets in Resources */,
+				34162FC023EC7F0D00C633FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -150,6 +226,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34162FB323EC7F0D00C633FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34162FBA23EC7F0D00C633FB /* AppDelegate.swift in Sources */,
+				34162FBC23EC7F0D00C633FB /* SceneDelegate.swift in Sources */,
+				34162FBE23EC7F0D00C633FB /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -159,6 +245,14 @@
 				34162FAA23EC76B700C633FB /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34162FC423EC7F0D00C633FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34162FC523EC7F0D00C633FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -323,6 +417,51 @@
 			};
 			name = Release;
 		};
+		34162FC923EC7F0D00C633FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = TMG254D42M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokopedia.SwiftUIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34162FCA23EC7F0D00C633FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = TMG254D42M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokopedia.SwiftUIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +479,15 @@
 			buildConfigurations = (
 				34162FB123EC76B700C633FB /* Debug */,
 				34162FB223EC76B700C633FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34162FC823EC7F0D00C633FB /* Build configuration list for PBXNativeTarget "SwiftUIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34162FC923EC7F0D00C633FB /* Debug */,
+				34162FCA23EC7F0D00C633FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
